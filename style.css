@@ -19,15 +19,18 @@
 .container1 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
   max-width: 80%;
   margin: 0 auto;
   padding: 4px 0;
 }
 
-.logo {
+@media screen(min 300) {
+  .container1 {
+    flex-wrap: wrap;
+  }
 }
-
 .nav {
   display: flex;
   align-items: center;
