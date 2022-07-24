@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,600;1,8..144,100&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  /* font-family: "Roboto", serif; */
+}
+
+:root {
+  --primeColor: #8c7b75;
+  --secColor: #efdcd5;
+  --thirdColor: #efebe9;
+  --textheader: #3e2723;
+}
+
+.head-main {
+  background-color: var(--primeColor);
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 4px 0;
+}
+
+.logo {
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  font-size: 0.7rem;
+  text-decoration: none;
+  padding-left: 15px;
+  display: block;
+  transition: all ease-out 0.5s;
+}
+
+.nav a:hover {
+  transform: rotate(6deg);
+  color: rgb(230, 224, 224);
+}
+
+.hero {
+  background-color: var(--secColor);
+  height: 50%;
+}
+
+.hero-innertext {
+  max-width: 600px;
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: small;
+  line-height: 1.6;
+}
+
+.hero-innertext h1 {
+  font-family: Roboto Serif;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--textheader);
+  font-size: 2.5rem;
+}
+
+.hero-innertext p {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.hero-innertext .button {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: var(--primeColor);
+  font-family: Roboto;
+  font-size: 0.6rem;
+  font-weight: medium;
+}
+
+.hero-innertext .button:hover {
+  background-color: white;
+  color: var(--textheader);
+}
+
+.grid-main {
+  background-color: var(--thirdColor);
+  padding: 50px 45px;
+}
+
+.boxes {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 10px;
+  /* width: 70%; */
+  /* font-size: 10px; */
+  margin: 0 auto;
+}
+
+.box h3 {
+  font-family: "Roboto Sarif";
+  color: var(--textheader);
+  padding-bottom: 4px;
+  font-size: medium;
+}
+
+.box p {
+  line-height: 1.6;
+  font-size: 10px;
+}
+
+footer {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 10px;
+  color: #8c7b75;
+}
